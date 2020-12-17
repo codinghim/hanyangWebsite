@@ -1,0 +1,19 @@
+.menu-section{
+    width:100%;
+    background-color: rgba(20,166,81,0.05);
+}
+
+.menu-link-container{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin: 250px 50px;
+}
+
+/* menu link button style */
+.menu-link{
+    border: 2px solid #6f6f6f;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #8f8f8f;
+}

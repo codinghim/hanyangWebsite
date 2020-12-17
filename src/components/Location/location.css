@@ -1,0 +1,30 @@
+.location-section{
+    background-color: rgba(45,54,145, 0.05);
+}
+.location-container{
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.location-map{
+    width: 60%;
+    height:600px;
+    min-width: 700px;
+}
+.location-description{
+    margin: 150px 50px;
+    width: 40%;
+}
+.location-description p{
+    font-size: 25px;
+    line-height: 1.5;
+}
+.location-description a{
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid #6f6f6f;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #8f8f8f;
+}
