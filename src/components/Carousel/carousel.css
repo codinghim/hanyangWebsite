@@ -8,14 +8,21 @@
     padding: 0;
     display:flex;
     align-self: center;
-    overflow: hidden;
 }
-.carousel{
-    position: relative;
+.slide{
+    position: absolute;
+    top:0;
     min-width: 100%;
     height: 80%;
-    transition: 0.2s;
     overflow: hidden;
+}
+
+.active-slide{
+    visibility: visible;
+}
+
+.hidden-slide{
+    visibility: hidden;
 }
 
 
