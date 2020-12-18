@@ -1,0 +1,13 @@
+{
+    "Categories" :{
+        
+    },
+    "Menu":[
+        {
+            "name": "Tteokbokki",
+            "price": "$10",
+            "notice": "spicy",
+            "ingredients": ["rice cake", "fish cake"]
+        }
+    ]
+}

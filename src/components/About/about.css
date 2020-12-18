@@ -1,0 +1,35 @@
+.about-section{
+    background-color: rgba(252,213,81, 0.05);
+}
+.about-container{
+    display:flex;
+    padding: 110px 0;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+
+.description-container{
+    /* border: 2px solid pink; */
+    padding: 100px;
+}
+
+.about-lg{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.about-sm{
+    color: #8f8f8f;
+}
+
+.availabilty-container{
+    /* border: 2px solid green; */
+    padding: 100px;
+}
+.availablity-lg{
+    font-weight: bold;
+}
+
+.availablity-sm{
+    font-size: 20px;
+}
