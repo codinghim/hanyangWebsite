@@ -1,0 +1,6 @@
+export {default as Navbar} from './Navbar/Navbar.js'
+export {default as Carousel} from './Carousel/Carousel.js'
+export {default as Menu} from './Menu/Menu.js'
+export {default as Location} from './Location/Location.js'
+export {default as About} from './About/About.js'
+export {default as Footer} from './Footer/Footer.js'

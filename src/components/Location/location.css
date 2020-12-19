@@ -1,30 +1,22 @@
-.location-section{
-    background-color: rgba(45,54,145, 0.05);
+#location-section{
+    scroll-margin: 50px;
 }
-.location-container{
-    display: flex;
-    padding-left: 50px;
-    align-items: center;
-    justify-content: space-evenly;
+
+.location-header {
+    margin: 0;
+    padding-top: 20px;
 }
-.location-map{
-    width: 60%;
-    height:600px;
-    min-width: 700px;
+
+.location-text {
+    font-size: 20px;
 }
-.location-description{
-    margin: 150px 50px;
-    width: 40%;
+
+.map-container {
+    position:relative;
 }
-.location-description p{
-    font-size: 25px;
-    line-height: 1.5;
-}
-.location-description a{
-    display: inline-block;
-    margin: 10px;
-    border: 2px solid #6f6f6f;
-    border-radius: 20px;
-    padding: 15px;
-    background-color: #8f8f8f;
+
+#map-embed {
+    height: 50vh;
+    width: 90vw;
+
 }

@@ -1,35 +1,41 @@
-.about-section{
-    background-color: rgba(252,213,81, 0.05);
+#about-section{
+    display: flex;
+    justify-content: center;
+    scroll-margin: 50px;
 }
-.about-container{
+
+.about-header{
+    font-size:36px;
+    padding: 0;
+    margin: 0
+}
+
+.story-container{
+    flex: 3;
     display:flex;
-    padding: 110px 0;
-    /* align-items: center; */
-    justify-content: space-evenly;
+    flex-direction:column;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;;
 }
 
-.description-container{
-    /* border: 2px solid pink; */
-    padding: 100px;
-}
-
-.about-lg{
-    font-size: 50px;
+.about-text{
+    font-size: 18px;
     font-weight: bold;
-}
-
-.about-sm{
-    color: #8f8f8f;
+    font-style: italic;
 }
 
 .availabilty-container{
     /* border: 2px solid green; */
-    padding: 100px;
-}
-.availablity-lg{
-    font-weight: bold;
+    flex:1;
+    padding: 10px;
+    align-items: center;
 }
 
 .availablity-sm{
     font-size: 20px;
+}
+
+.covid-hours {
+    font-size: 16px;
 }
