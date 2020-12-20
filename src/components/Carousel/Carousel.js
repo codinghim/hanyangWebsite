@@ -26,16 +26,7 @@ const Carousel = () => {
         }        
     }
 
-    const showSlide = (index) =>{
-        //make visible slide to invisible
-        const activeslides = document.getElementsByClassName('active-slide')
-        if(activeslides.length !== 0){
-            document.getElementsByClassName('active-slide')[0].className = "slide hidden-slide"
-        }
-        //show slide of an given index
-        document.getElementsByClassName('hidden-slide')[index].className = "slide active-slide"
-        console.log(`slide index: ${slideIndex}`)
-    }
+    
     
     // When component mounted, set slide index as 0
     useEffect(() => {
@@ -44,6 +35,16 @@ const Carousel = () => {
 
     // Whenever slide Index is changed show slide Index
     useEffect(() => {
+        const showSlide = (index) =>{
+            //make visible slide to invisible
+            const activeslides = document.getElementsByClassName('active-slide')
+            if(activeslides.length !== 0){
+                document.getElementsByClassName('active-slide')[0].className = "slide hidden-slide"
+            }
+            //show slide of an given index
+            document.getElementsByClassName('hidden-slide')[index].className = "slide active-slide"
+            console.log(`slide index: ${slideIndex}`)
+        }
         showSlide(slideIndex)
     },[slideIndex])
 
