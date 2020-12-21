@@ -2,23 +2,11 @@
 *{
   text-align: center;
   font-size: 30px;
-  font-family: Georgia, sans-serif;
 }
 
 a{
   outline: 0;
   text-decoration: none;
-}
-
-section{
-  padding-bottom: 100px;
-}
-
-.section-header{
-  padding-top: 100px;
-  padding-bottom: 50px;
-  font-size: 50px;
-  margin: 0;
 }
 
 html{
@@ -30,4 +18,10 @@ a:link, a:visited{
 }
 a:hover, a:active{
   color: black
+}
+
+/* to disable scrolling */
+.body-popup-open{
+  height:100vh;
+  overflow-y: hidden;
 }

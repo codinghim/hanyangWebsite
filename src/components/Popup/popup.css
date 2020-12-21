@@ -1,0 +1,42 @@
+.popup-background{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 2;
+}
+
+.popup-hidden{
+  visibility: hidden;
+}
+
+.popup-container{
+  position: absolute;
+  width: 50vw;
+  height:50vh;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,255,255, 0.7);
+  z-index: 1;
+}
+
+.popup-title{
+  margin: 100px 0 0 0;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.popup-description{
+  margin: 50px 0 0 0;
+}
+
+.popup-close{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}

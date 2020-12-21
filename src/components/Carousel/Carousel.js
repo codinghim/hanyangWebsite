@@ -1,33 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import Carouselimg from '../Carouselimg/Carouselimg';
 import './carousel.css';
+import {SLIDES} from '../../Content.js'
 
 const Carousel = () => {
-    let arr = [<Carouselimg src={"https://s3-media0.fl.yelpcdn.com/bphoto/G0u3xzhYFb0LhhwLQZ7CuA/o.jpg"} />,
-        <Carouselimg src={"https://s3-media0.fl.yelpcdn.com/bphoto/TUbwew_mUvTtjOa_unP8yA/o.jpg"} />,
-        <Carouselimg src={"https://s3-media0.fl.yelpcdn.com/bphoto/sxkJEEABYysc7HRr6CZVog/o.jpg"} />,
-        <Carouselimg src={"https://s3-media0.fl.yelpcdn.com/bphoto/ohDnksLSoLxo2EkD-2IaQQ/o.jpg"} />,
-        <Carouselimg src={"https://s3-media0.fl.yelpcdn.com/bphoto/8Ru2cssCnIBqNhFZvklMEQ/o.jpg"} />
-    ]
     const [slideIndex, setslideIndex] = useState(0)
-
     const goLeft = () =>{
         if(slideIndex === 0){
-            setslideIndex(arr.length-1)
+            setslideIndex(SLIDES.length-1)
         }else{
             setslideIndex(slideIndex-1)
         }
     }
     const goRight = () =>{
-        if(slideIndex === (arr.length-1)){
+        if(slideIndex === (SLIDES.length-1)){
             setslideIndex(0)
         }else{
             setslideIndex(slideIndex+1)
-        }        
-    }
-
-    
-    
     // When component mounted, set slide index as 0
     useEffect(() => {
         setslideIndex(0)
@@ -49,11 +38,11 @@ const Carousel = () => {
     },[slideIndex])
 
     return(
-        <section className="carousel-container">
-            {arr.map((item,index)=>{
+        <section id="carousel-container">
+            {SLIDES.map((item, index) => {
                 return (
                     <div key={index} className="slide hidden-slide">
-                        {item}
+                        <Carouselimg src={item}/>
                     </div>
                 )
             })}

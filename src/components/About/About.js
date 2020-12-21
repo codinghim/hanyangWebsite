@@ -1,23 +1,23 @@
 import './about.css'
+import {STORY} from '../../Content.js'
 
 const About = () => {
     return(
-        <section id="about-section" className="about-section"> 
-            <p className="section-header">About</p>
-            <nav className="about-container">
-                <div className="description-container">
-                    <p className="about-lg">Explanations with lg font.</p>
-                    <p className="about-sm">Explanations with sm font. Explanations with sm font.</p>
-                </div>
-                <div className="availabilty-container">
-                    <p className="availablity-lg">Available</p>
-                    <p className="availablity-sm">Dining, Take-out</p>
-                    <p className="availablity-sm">Delivery(UberEats, DoorDash)</p>
-                    <p className="availablity-sm">Parking</p>
-                </div>
-                
-            </nav>
-            
+        <section id="about-section">
+            <div className="story-container">
+                <h1 className="about-header">Our Story</h1>
+                <p className="about-text">{STORY}</p>
+
+            </div>
+            <div className="availabilty-container">
+                <h2>Open Hours</h2>
+                <p className="availablity-sm">24 / 7</p>
+                <p className="covid-hours">* CO-VID 19 may affect these hours</p>
+                <h2>Availability</h2>
+                <p className="availablity-sm">Dine-In, Take-out</p>
+                <p className="availablity-sm">Parking</p>
+            </div>
+
         </section>
     )
 }
