@@ -17,9 +17,6 @@ const Carousel = () => {
             setslideIndex(0)
         }else{
             setslideIndex(slideIndex+1)
-        }
-    }
-
     // When component mounted, set slide index as 0
     useEffect(() => {
         setslideIndex(0)
