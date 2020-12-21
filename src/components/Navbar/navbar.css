@@ -18,10 +18,21 @@
         transform: scaleY(0)
     }
 }
+
+.name-logo-container {
+    display:flex;
+    justify-content: center;
+}
+
+.logo-link {
+    height: 30px;
+    width: 30px;
+    margin-left: 8px;
+}
+
 .website-name{
     font-size: 20px;
     font-weight: bold;
-    margin-left: 10px;
     padding: 5px;
     border-radius: 10px;
 }

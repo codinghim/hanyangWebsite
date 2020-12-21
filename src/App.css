@@ -19,3 +19,9 @@ a:link, a:visited{
 a:hover, a:active{
   color: black
 }
+
+/* to disable scrolling */
+.body-popup-open{
+  height:100vh;
+  overflow-y: hidden;
+}
