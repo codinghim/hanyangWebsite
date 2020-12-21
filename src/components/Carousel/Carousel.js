@@ -5,18 +5,22 @@ import {SLIDES} from '../../Content.js'
 
 const Carousel = () => {
     const [slideIndex, setslideIndex] = useState(0)
-    const goLeft = () =>{
-        if(slideIndex === 0){
+    const goLeft = () => {
+        if(slideIndex === 0) {
             setslideIndex(SLIDES.length-1)
-        }else{
+        }
+        else {
             setslideIndex(slideIndex-1)
         }
     }
-    const goRight = () =>{
-        if(slideIndex === (SLIDES.length-1)){
+    const goRight = () => {
+        if(slideIndex === (SLIDES.length-1)) {
             setslideIndex(0)
-        }else{
+        }
+        else {
             setslideIndex(slideIndex+1)
+        }
+    }
     // When component mounted, set slide index as 0
     useEffect(() => {
         setslideIndex(0)
@@ -50,6 +54,7 @@ const Carousel = () => {
             <button id="goRight" onClick={goRight}>&gt;</button>
         </section>
     )
+
 }
 
-export default Carousel;
+export default Carousel
