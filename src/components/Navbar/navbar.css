@@ -1,15 +1,15 @@
 .navbar{
     display: flex;
-    position: sticky;
+    position: fixed;
     align-items: center;
     justify-content: space-between;
-    top:0;
+    top: 0;
     width: 100%;
-    height: 50px;
+    height: 60px;
     z-index: 1;
-    background-image: url("https://img.freepik.com/free-vector/yellow-parchment_53876-91513.jpg?size=626&ext=jpg");
-    box-shadow: 0px 5px 50px;;
+    box-shadow: 0px 5px 50px;
     animation: drop-down 0.5s ease;
+    background-color: white;
     transform-origin: top
 }
 
@@ -19,31 +19,35 @@
     }
 }
 
-.name-logo-container {
-    display:flex;
-    justify-content: center;
-}
-
 .logo-link {
-    height: 30px;
-    width: 30px;
-    margin-left: 8px;
+    height: 50px;
+    width: 50px;
 }
 
 .website-name{
     font-size: 20px;
     font-weight: bold;
+    background: linear-gradient(180deg, #2E3690 50%, #14A651 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding: 5px;
     border-radius: 10px;
+    margin-right: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .navbar-routes{
-    display: flex
+    display: flex;
+    align-items: center;
 }
 .navbar-button{
-    font-size: 20px;
-    margin: 0 5px;
-    padding: 5px;
-    border-radius: 10px;
+    font-size: 18px;
+    margin-left: 20px;
+    color: #2E3690;
 }
 
 .active-section {

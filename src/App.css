@@ -1,7 +1,9 @@
 /* general */
 *{
-  text-align: center;
-  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  /* text-align: center; */
+  font-size: 18px;
 }
 
 a{
@@ -13,15 +15,46 @@ html{
   scroll-behavior: smooth;
 }
 
-a:link, a:visited{
-  color: black
+a:visited {
+  color: inherit;
 }
-a:hover, a:active{
-  color: black
+
+a:active {
+  color: inherit;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-image: url('./images/food3.JPG');
+  background-size: cover;
+  z-index: -1;
+}
+
+.section-divider {
+  height: 50vh;
+}
+
+.font-hanyang-green {
+  color: #14A651;
+}
+
+.font-hanyang-blue {
+  color: #2E3690;
+}
+
+.background-hanyang-green {
+  background-color: #14A651;
+}
+
+.background-hanyang-blue {
+  background-color: #2E3690;
 }
 
 /* to disable scrolling */
-.body-popup-open{
+/* .body-popup-open{
   height:100vh;
   overflow-y: hidden;
-}
+} */

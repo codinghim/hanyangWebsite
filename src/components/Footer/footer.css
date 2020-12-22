@@ -1,3 +1,28 @@
-footer p{
-    font-size: 15px;
+#footer-container {
+    background-color: #14A651;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attribute, .store-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+
+.store-info a {
+    color: white;
+}
+
+.store-info > a:visited, .store-info > a:active{
+    color: white;
+}
+
+footer p, footer a{
+    font-size: 14px;
+    color: white;
 }

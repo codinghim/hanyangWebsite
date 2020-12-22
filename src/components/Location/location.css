@@ -1,22 +1,50 @@
 #location-section{
     scroll-margin: 50px;
+    background-color: white;
+    display: flex;
+    height: 50vh;
+}
+
+.location-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 7px dotted #2E3690;
+    height: 100%;
+    width: 50%;
+}
+
+.location-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .location-header {
-    margin: 0;
-    padding-top: 20px;
+    font-size: 42px;
+    margin-bottom: 100px;
 }
 
 .location-text {
+    font-weight: bold;
     font-size: 20px;
 }
-
-.map-container {
-    position:relative;
+#map-embed {
+    /* margin-left: 30px; */
+    width: 50%;
+    height: 100%;
 }
 
-#map-embed {
-    height: 50vh;
-    width: 90vw;
+.location-tel {
+    margin-top: 20px;
+    display: flex;
+}
 
+.pill-tel {
+    border-radius: 15px;
+    color: white;
+    padding: 5px 10px;
+    background-color: #2E3690;
+    margin-left: 5px;
 }

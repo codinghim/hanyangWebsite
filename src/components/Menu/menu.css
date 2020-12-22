@@ -1,34 +1,75 @@
 #menu-section{
     width:100%;
-    scroll-margin: 50px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-bottom: 7px dotted #14A651;
 }
 
 .menu-link-container{
     display:flex;
-    justify-content: center;;
+    justify-content: center;
+}
+
+.menu-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 7px dotted #2E3690;
+    height: 100%;
 }
 
 /* menu link button style */
 .menu-category{
-    border: 2px solid black;
     border-radius: 10px;
-    padding: 16px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
     margin: 20px;
     font-size: 20px;
-    transition: transform 0.5s;
-    background-image: url("https://wallpaperaccess.com/full/1698011.jpg")
+    font-weight: bold;
 }
 
 .menu-category:link, .menu-category:visited {
-    color: white
+    color: white;
 }
 
 
 .menu-category:hover, .menu-category:active{
+    transition: 0.5s;
     transform:scale(1.2)
 }
 
 .menu-header {
-    margin: 0px;
+    margin-bottom: 100px;
     padding-top: 20px;
+    font-size: 42px;
+}
+
+.availabilty-container{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.availability-header {
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.availablity-text{
+    font-size: 24px;
+}
+
+.availability-text > strong {
+    font-size: 24px;
+}
+
+.covid-hours {
+    font-size: 16px;
 }
