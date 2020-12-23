@@ -232,16 +232,14 @@ a:active {
   div.popup-container{
     width: 90vw;
     height: 60vh;
-    justify-content: center;
   }
 
   .popup-container .popup-title{
-    margin: 50px 0;
     font-size: 20px;
   }
-  
+
   p.popup-description{
-    margin: 0;
+    margin: 50px 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
