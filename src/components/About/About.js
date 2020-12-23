@@ -5,7 +5,7 @@ const About = () => {
         <section id="about-section">
             <h1 className="about-header">Our Story</h1>
             <div className="story-container">
-                <div className="about-text">
+                <div className="about-text about-text-english">
                     <p>
                     For 22 years strong, <strong className="font-hanyang-blue">Hanyang Bunshik</strong> has successfully labeled itself 
                     as the go-to place for authentic Korean Cuisine Street Food. 
@@ -16,7 +16,7 @@ const About = () => {
                     </p>
                 </div>
 
-                <div className="about-text">
+                <div className="about-text about-text-korean">
                     <p>
                     22년 전통을 이어온 <strong className="font-hanyang-green">한양분식</strong>이 새롭게 단장 했습니다! 
                     1년 365일 연중무휴, 푸짐한 양과 깊이있는 맛을 정성으로 꾹꾹 담아 부담없는 가격에 전해드립니다. 

@@ -5,23 +5,7 @@ import {SLIDES} from '../../Content.js'
 
 const Carousel = () => {
     const [slideIndex, setslideIndex] = useState(0)
-    // const goLeft = () => {
-    //     if(slideIndex === 0) {
-    //         setslideIndex(SLIDES.length-1)
-    //     }
-    //     else {
-    //         setslideIndex(slideIndex-1)
-    //     }
-    // }
-    // const goRight = () => {
-    //     if(slideIndex === (SLIDES.length-1)) {
-    //         setslideIndex(0)
-    //     }
-    //     else {
-    //         setslideIndex(slideIndex+1)
-    //     }
-    // }
-    // When component mounted, set slide index as 0
+   
     useEffect(() => {
         setslideIndex(0)
         let i = slideIndex
@@ -59,7 +43,7 @@ const Carousel = () => {
         let newVisibleSlide = document.getElementsByClassName(`slide-${index}`)[0]
         newVisibleSlide.classList.remove('hidden-slide')
         newVisibleSlide.classList.add('active-slide')
-        console.log(`slide index: ${slideIndex}`)
+        // console.log(`slide index: ${slideIndex}`)
     }
 
     return(
@@ -71,8 +55,6 @@ const Carousel = () => {
                     </div>
                 )
             })}
-            {/* <button id="goLeft" onClick={goLeft}>Prev</button>
-            <button id="goRight" onClick={goRight}>Next</button> */}
         </section>
     )
 

@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-left: 7px dotted #2E3690;
+    border-right: 7px dotted #2E3690;
     height: 100%;
     width: 50%;
 }

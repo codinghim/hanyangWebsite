@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.attribute, .store-info {
+.attribute, .copyright {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +22,7 @@
     color: white;
 }
 
-footer p, footer a{
+#footer-container p, #footer-container a{
     font-size: 14px;
     color: white;
 }
