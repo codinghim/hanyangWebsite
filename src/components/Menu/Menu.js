@@ -1,12 +1,11 @@
 import React from 'react';
 import './menu.css';
-import menuIcon from "../../images/menu-icon.png"
 
 const Menu = () =>{
 
     return(
         <section id="menu-section">
-             <div className="menu-container">                    
+             <div className="menu-container">
                 <a className="menu-category menu-category-main" target="_blank" href="/menu/menu1.pdf">Main Menu</a>
                 <a className="menu-category menu-category-side" target="_blank" href="/menu/menu2.pdf">Side Menu</a>
             </div>

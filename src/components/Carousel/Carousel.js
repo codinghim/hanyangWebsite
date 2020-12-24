@@ -5,12 +5,10 @@ import {SLIDES} from '../../Content.js'
 
 const Carousel = () => {
     const [slideIndex, setslideIndex] = useState(0)
-   
+
     useEffect(() => {
-        setslideIndex(0)
         let i = slideIndex
         const slideInterval = setInterval(() => {
-            // For some reason slideIndex always returns 0 inside this interval
             if(i === (SLIDES.length-1)) {
                 setslideIndex(0)
                 i = 0
@@ -24,7 +22,7 @@ const Carousel = () => {
         return function cleanUp() {
             clearInterval(slideInterval)
         }
-    },[])
+    },[slideIndex])
 
     // Whenever slide Index is changed show slide Index
     useEffect(() => {
